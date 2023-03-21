@@ -1,0 +1,208 @@
+.contacts-box-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include tablet {
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+    }
+    @include desctop {
+        margin-bottom: 60px;
+    }
+}
+
+.contacts-box-item {
+    background-color: #FCFCFC;
+    border-radius: 24px;
+    padding: 40px 32px 24px 32px;
+    @include calc(1, 16px);
+    height: 412px;
+
+    @include tablet {
+        height: 537px;
+    }
+
+    @include desctop {
+        height: 542px;
+    }
+}
+
+.dicor-contacts-title {
+    display: inline-block;
+    background-color: #F8D24E;
+    border-radius: 6px;
+    padding: 4px 22px;
+    margin-bottom: 20px;
+}
+
+.contacts-title {
+    @include font (500, 12px, calc(14 / 12), 0.04em);
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #131313;
+
+
+
+    @include tablet {
+        @include font (500, 16px, calc(22 / 16), 0.04em);
+    }
+}
+
+.contacts-city {
+    @include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #131313;
+    margin-bottom: 8px;
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), 0.04em);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(30 / 16), 0.04em);
+    }
+}
+
+.physical-adress {
+    @include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #D6936D;
+    margin-bottom: 24px;
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), 0.04em);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(29 / 16), 0.04em);
+    }
+}
+
+.border-day-time {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.contacts-day {
+    @include font (500, 12px, calc(22 / 12), 0.04em);
+    color: #131313;
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(30 / 16), 0.04em);
+    }
+}
+
+.contacts-time {
+    @include font (500, 12px, calc(22 / 12), null);
+    color: #ABABAB;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    @include tablet {
+        @include font (500, 14px, calc(26 / 14), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(30 / 16), null);
+    }
+}
+
+.contacts-tel {
+    @include font (500, 12px, calc(19 / 12), null);
+    color: #131313;
+    margin-top: 24px;
+
+    @include tablet {
+        @include font (500, 14px, calc(21 / 114), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(24 / 16), null);
+    }
+}
+
+.contacts-email {
+    @include font (500, 12px, calc(19 / 12), null);
+    color: #131313;
+    margin-top: 6px;
+
+    @include tablet {
+        @include font (500, 14px, calc(21 / 114), null);
+    }
+
+    @include desctop {
+        @include font (500, 16px, calc(24 / 16), null);
+    }
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 62px;
+    padding-right: 62px;
+    gap: 16px;
+    @include tablet {
+            padding-left: 180px;
+                padding-right: 180px;
+                flex-direction: row;
+                justify-content: center;
+    }
+    @include desctop {
+        padding-left: 396px;
+            padding-right: 396px;
+    }
+}
+
+.btn-frst {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 164px;
+    min-height: 42px;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #F8D24E;
+    background-color: #F8D24E;
+    color: #131313;
+    outline: none;
+    translate: all 0.3s ease-in;
+    transition-delay: 0.15s;
+    @include font(600, 14px, 1.28, normal);
+    &:hover,
+    &:focus {
+        background-color:#0A8817 ;
+        border: 1px solid #0A8817;
+    }
+}
+
+.btn-scnd {
+    display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 164px;
+        min-height: 42px;
+        padding: 12px;
+        background-color: transparent;
+        color: #131313;
+        outline: none;
+        translate: all 0.3s ease-in;
+        transition-delay: 0.15s;
+        border: 2px solid #F8D24E;
+        border-radius: 10px;
+        @include font(600, 14px, 1.28, normal);
+            &:hover,
+                &:focus {
+                    background-color: #0A8817;
+                    border: 1px solid #0A8817;
+                }
+}
